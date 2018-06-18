@@ -4,7 +4,7 @@ body {
 }
 
 .title {
-    background-color: #f8f8f8;
+    background-color: #fff;
     height: 150px;
 }
 
@@ -12,66 +12,8 @@ body {
     position: relative;
     height: 550px;
     text-align: center;
-    background-color: #14bdac;
+    background-color: #fdc988;
     z-index: 0;
-}
-
-.box {
-    padding: 65px;
-}
-
-#var_1 {
-    border-right: 5px solid grey;
-    border-bottom: 5px solid grey;
-    opacity: 0.5;
-}
-
-#var_2 {
-    border-right: 5px solid grey;
-    border-bottom: 5px solid grey;
-    opacity: 0.5;
-}
-
-#var_3 {
-    border-bottom: 5px solid grey;
-    opacity: 0.5;
-}
-
-#var_4 {
-    border-right: 5px solid grey;
-    opacity: 0.5;
-}
-
-#var_5 {
-    border-right: 5px solid grey;
-    opacity: 0.5;
-}
-
-#var_6 {
-    opacity: 0.5;
-}
-
-#var_7 {
-    border-top: 5px solid grey;
-    border-right: 5px solid grey;
-    opacity: 0.5;
-}
-
-#var_8 {
-    border-top: 5px solid grey;
-    border-right: 5px solid grey;
-    opacity: 0.5;
-}
-
-#var_9 {
-    border-top: 5px solid grey;
-    opacity: 0.5;
-}
-
-@media (max-width: 700px) {
-    .box {
-        padding: 39px;
-    }
 }
 
 #row-main {
@@ -104,7 +46,7 @@ body {
 
 .navbar-toggle {
     display: block !important;
-    margin-top: 25px !important;
+    margin-top: 35px !important;
 }
 
 .navbar-toggle span {
@@ -113,22 +55,109 @@ body {
     background-color: #c2c2c2;
 }
 
-.circulo {
-    height:90px;
-    background: radial-gradient(circle closest-side, transparent 0%, transparent 74%, #fff 76%, #fff 98%, rgba(0,0,0,0) 100%);
-    transition: width 0.3s ease;
+/* ------------------ */
+
+#word {
+    color: #5b5b5b;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-size: 2.25em;
+    line-height: 55px;
 }
 
-.xis {
-    height: 90px;
-    font-size: 120px;
-    line-height: 0.6;
-    cursor: default;
-    transition: width 0.3s ease;
+#word span {
+    display: block;
+    text-align: center
 }
 
-.uBQC5b button.TTT-active {
-    border-bottom-color: #14bdac;
-    box-shadow: 0 4px 5px rgba(0,0,0,.16);
-    box-shadow: 0 4px 5px rgba(0,0,0,.16);
+#keyboard ul {
+    margin: 10px 0;
+    list-style-type: none;
+    text-align: center
+}
+
+#keyboard ul li {
+    display: inline-block
+}
+
+#keyboard ul li button {
+    font-size: 22px;
+    width: 50px;
+    background: #fff;
+}
+
+.bgd {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 251px;
+    height: 209px;
+    background: url('../images/forca.gif');
+    display: block;
+    margin: auto;
+}
+
+#stickman .error-0 {
+    position: absolute;
+    top: 20px;
+    left: 215px;
+    width: 50px;
+    height: 60px;
+    background: url('../images/man/head.png');
+    background-size: cover;
+}
+
+#stickman .error-1 {
+    position: absolute;
+    top: 79.5px;
+    left: 225px;
+    width: 39px;
+    height: 70px;
+    background: url('../images/man/body.png');
+    background-size: cover;
+}
+
+#stickman .error-2 {
+    position: absolute;
+    top: 74px;
+    left: 210px;
+    width: 26px;
+    height: 60px;
+    background: url('../images/man/arm.png');
+    background-size: cover;
+}
+
+#stickman .error-3 {
+    position: absolute;
+    top: 86px;
+    left: 229px;
+    width: 43px;
+    height: 60px;
+    background: url('../images/man/arm2.png');
+    background-size: cover;
+}
+
+#stickman .error-4 {
+    position: absolute;
+    top: 146px;
+    left: 227px;
+    width: 18px;
+    height: 70px;
+    background: url('../images/man/leg.png');
+    background-size: cover;
+}
+
+#stickman .error-5 {
+    position: absolute;
+    top: 146px;
+    left: 240px;
+    width: 21px;
+    height: 70px;
+    background: url('../images/man/leg2.png');
+    background-size: cover;
+}
+
+#to-do-next {
+    overflow: hidden;
+    margin: 20px 0
 }

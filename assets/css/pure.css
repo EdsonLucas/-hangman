@@ -1876,13 +1876,12 @@ h6 {
     font-weight: 700;
     letter-spacing: 0.125em;
     line-height: 1.75em;
-    margin-bottom: 1em;
+    margin-bottom: 20px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.home-content p,
-span {
+.home-content p {
     font-size: 1.25em;
     line-height: 1.65em;
 }
