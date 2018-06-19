@@ -99,8 +99,8 @@ body {
 
 #stickman .error-0 {
     position: absolute;
-    top: 20px;
-    left: 215px;
+    top: 10%;
+    left: 51%;
     width: 50px;
     height: 60px;
     background: url('../images/man/head.png');
@@ -109,8 +109,8 @@ body {
 
 #stickman .error-1 {
     position: absolute;
-    top: 79.5px;
-    left: 225px;
+    top: 38.5%;
+    left: 53%;
     width: 39px;
     height: 70px;
     background: url('../images/man/body.png');
@@ -119,8 +119,8 @@ body {
 
 #stickman .error-2 {
     position: absolute;
-    top: 74px;
-    left: 210px;
+    top: 35%;
+    left: 50%;
     width: 26px;
     height: 60px;
     background: url('../images/man/arm.png');
@@ -129,8 +129,8 @@ body {
 
 #stickman .error-3 {
     position: absolute;
-    top: 86px;
-    left: 229px;
+    top: 41%;
+    left: 54%;
     width: 43px;
     height: 60px;
     background: url('../images/man/arm2.png');
@@ -139,8 +139,8 @@ body {
 
 #stickman .error-4 {
     position: absolute;
-    top: 146px;
-    left: 227px;
+    top: 70%;
+    left: 53.5%;
     width: 18px;
     height: 70px;
     background: url('../images/man/leg.png');
@@ -149,8 +149,8 @@ body {
 
 #stickman .error-5 {
     position: absolute;
-    top: 146px;
-    left: 240px;
+    top: 70%;
+    left: 57%;
     width: 21px;
     height: 70px;
     background: url('../images/man/leg2.png');
