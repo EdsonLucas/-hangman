@@ -56,6 +56,12 @@ body {
 }
 
 /* ------------------ */
+#wordlist {
+    color: #5b5b5b;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
 
 #word {
     color: #5b5b5b;

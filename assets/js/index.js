@@ -20,6 +20,8 @@
     for(let x = 0; x <= el.length; x++) {
         el[x].addEventListener('click', function () {
             charValue = this.getAttribute('data-guide');
+            el[x].disabled=true;
+            letterList(charValue);
 
             let position = [];
             for(let w = 0; w < memory.length; w++) {
@@ -33,8 +35,42 @@
                     document.querySelector('#word').innerHTML = letters;
                 }
 
+                if(letters.indexOf("_") === -1) {
+                    swal({
+                        type: 'success',
+                        title: 'Parabéns, você ganhou!',
+                        text: 'Deseja jogar novamente?',
+                        showCancelButton: true,
+                        cancelButtonText: 'Cancelar',
+                        cancelButtonColor: '#d33',
+                        confirmButtonColor: '#3085d6',
+                        confirmButtonText: 'Vamos lá!'
+                    }).then((result) => {
+                      if (result.value) {
+                        window.location = 'index.html';
+                      }
+                    });
+                }
+
             } else {
                 erro();
+
+                if(error >= 6) {
+                    swal({
+                        type: 'error',
+                        title: 'Game Over',
+                        text: 'Deseja tentar novamente?',
+                        showCancelButton: true,
+                        cancelButtonText: 'Cancelar',
+                        cancelButtonColor: '#d33',
+                        confirmButtonColor: '#3085d6',
+                        confirmButtonText: 'Vamos lá!'
+                    }).then((result) => {
+                      if (result.value) {
+                        window.location = 'index.html';
+                      }
+                    });
+                }
             }
 
         });
@@ -48,6 +84,15 @@
         stick.appendChild(div);
 
         error++;
+    }
+
+    function letterList(value) {
+        let ltr = document.querySelector('#wordList');
+        ltr.style.display = 'block';
+
+        let div = document.createElement('div');
+        let text = document.createTextNode(" " + value + ", ");
+        ltr.appendChild(div.appendChild(text));
     }
 
 })();
